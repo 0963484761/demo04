@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>phép gán</p>
+    <script>
+        var y = 99;
+       // y = y + 100;
+
+       /* var z = z % 5;
+        z %= 5;
+
+        var b = 9;
+        b -= 18;
+
+        var c = 18;
+        c *= 4 */
+
+        var z = y++; //  z = 99 y = 100  thứ tự ưu tiên của ++ nhỏ hơn phép gán
+        var i = ++y; // i = y = 101  thứ tự ưu tiên của thằng ++ lớn hơn phép gán
+
+        z= y--; // z = 101 , y = 100
+        i = --y; // i = y = 99
+
+        z = y--; // z = 99, y = 98;
+        i = --y; // i = y = 97 
+
+        z= y--; // z = 97 , y = 96
+        i = --y; // i = y = 95;
+
+        z= y++; // z= 95 , y = 96;
+        i = ++y; // i = y = 97; 
+        alert("z= " +z+ " , i = "+i);
+    </script>
+</body>
+</html>
